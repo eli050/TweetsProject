@@ -10,7 +10,8 @@ class CleanerDF:
         self.remove_punctuation()
         self.to_lower_case()
         self.delete_unclassified()
-        self.df.to_csv("data/tweets_dataset_cleaned.csv")
+        self.df.to_csv("results/tweets_dataset_cleaned.csv")
+        return self.df
 
     def relevant_df(self,relevant_columns:list[str]):
         self.df= self.df[relevant_columns]

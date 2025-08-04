@@ -5,6 +5,9 @@ class ExplorerData:
     def __init__(self,df:pd.DataFrame):
         self.df = df
 
+    def dump_to_json(self):
+        pass
+
     def total_count(self):
         """
         Counts how many tweets in total
